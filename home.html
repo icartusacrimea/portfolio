@@ -19,7 +19,12 @@
   }
   
   .navbar-inverse .navbar-right>li>a:hover {
-  color: #ff6666;
+    color: #ff6666;
+  }
+  
+  .navbar-brand>li>a:hover {
+    color: #ff6666;
+    text-decoration: none;
   }
 
   #heading {
@@ -75,19 +80,32 @@
       font-family: 'Ropa Sans', sans-serif;
       margin: 0;
       padding: 0;
+      min-height: 74px;
       background-color: #2d2d30;
-      opacity: .9;
-      font-size: 1.94em;
+      opacity: .95;
+      font-size: 1.98em;
       letter-spacing: 3px;
       border: 10px double #554370;
       border-right-style: hidden;
       border-left-style: hidden;
       border-radius: 0;
   }
+  
+  .navbar-nav > li > a {
+      line-height: 74px;
+  }
+  
+  .navbar-brand > li > a {
+    line-height: 74px;
+  }
 
   #mobile-nav {
       display: none;
-      font-size: 90%;
+      font-size: 95%;
+      background-color: #1a1a1a;
+      opacity: .93;
+      padding: 0;
+      margin: 0;
   }
   
   .navbar-right {
@@ -96,7 +114,9 @@
 
   .navbar-brand {
     font-family: 'Amatic SC', cursive;
-    font-size: 2.1em;
+    font-size: 2.5em;
+    list-style-type: none;
+    color: #00ff99;
   }
 
   h1 {
@@ -114,7 +134,7 @@
 
   h3 {
     font-family: 'Ropa Sans', sans-serif;
-    font-size: 2.3em;
+    font-size: 2.4em;
     color: #00ff99;
   }
 
@@ -125,11 +145,11 @@
   }
 
   .separator {
-  max-width: 200px;
+  max-width: 140px;
   }
 
   .separator-light {
-    border-top: solid 3px #00ff99;
+    border-top: double 2px #00ff99;
     color: #00ff99;
   }
 
@@ -254,6 +274,7 @@ figure.effect-portfolio:hover p {
   width: 200px;
   border: 2px solid #ff6666;
   border-radius: 25px;
+  padding: 2px;
 }
 
 
@@ -278,8 +299,7 @@ figure.effect-portfolio:hover p {
 #free-code-camp, #github, #linked-in, #twitter {
   border-radius: 50%;
   border: solid 2px #40CED7;
-  
-  font-size: 1.8em;
+  font-size: 2.2em;
   padding: 10px;
 }
 
@@ -336,6 +356,11 @@ figure.effect-portfolio:hover p {
     -webkit-transform: none;
     transform: none;
   }
+  #mobile-nav ul li {
+    display: inline-block;
+    padding: 0;
+    font-size: 80%;
+  }
   body {
     font-size: 90%;
   }
@@ -345,6 +370,11 @@ figure.effect-portfolio:hover p {
   .intro-text {
     color: #fff;
     padding: 200px 0;
+  }
+  #mobile-nav ul li {
+    display: inline-block;
+    padding: 0;
+    font-size: 85%;
   }
 }
 
@@ -356,6 +386,11 @@ figure.effect-portfolio:hover p {
   body {
     font-size: 90%;
   }
+  #mobile-nav ul li {
+    display: inline-block;
+    padding: 0;
+    font-size: 85%;
+  }
 }
 
   </style>
@@ -366,7 +401,7 @@ figure.effect-portfolio:hover p {
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#heading"><strong>T. Lauren Cremeans</strong></a>
+      <ul class="navbar-brand" href="#heading"> <li><a href=#brand">T. Lauren Cremeans</a></li>
     </div>
     <div id="navigation">
       <ul class="nav navbar-nav navbar-right">
@@ -383,11 +418,11 @@ figure.effect-portfolio:hover p {
 <nav id="mobile-nav" class="navbar navbar-default navbar-fixed-top">
   <div class="container nav-mobile">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#heading">T. Lauren Cremeans</a>
+      <ul class="navbar-brand" href="#heading"> <li> <a href=#brand">T. Lauren Cremeans</a></li>
     </div>
     <div>
       <ul class="nav navbar-nav navbar-right">
-        <li>
+        <li style="letter-spacing:0">
           <a href="#heading"><i class="fa fa-home"></i></a>
         </li>
         <li>
