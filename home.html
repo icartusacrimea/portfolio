@@ -51,16 +51,16 @@
     -webkit-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
-    -webkit-filter: brightness(50%);
-    -moz-filter: brightness(50%);
-    -o-filter: brightness(50%);
-    -ms-filter: brightness(50%);
-    filter: brightness(50%);
+    -webkit-filter: brightness(60%);
+    -moz-filter: brightness(60%);
+    -o-filter: brightness(60%);
+    -ms-filter: brightness(60%);
+    filter: brightness(60%);
   }
 
   .intro-text {
   color: #fff;
-  padding: 90px 20px;
+  padding: 190px 10px 85px 10px;;
   }
   
   .img-circle {
@@ -68,12 +68,11 @@
     margin-left: auto;
     margin-right: auto;
     border: 2px solid #ff6666;
-    padding: 0;
   }
 
   section {
-    padding-top: 100px;
-    padding-bottom: 60px;
+    padding-top: 90px;
+    padding-bottom: 20px;
     margin: 0;
   }
 
@@ -90,14 +89,13 @@
   }
 
   .navbar {
-      font-family: 'Ropa Sans', sans-serif;
+      font-family: 'Amatic SC', cursive;
       margin: 0;
       padding: 0;
-      min-height: 56px;
-      background-color: #1a1a1a;
-      opacity: .93;
-      font-size: 1.98em;
-      letter-spacing: 1px;
+      min-height: 50px;
+      background-color: #131320;
+      opacity: .91;
+      font-size: 2.6em;
       border: 10px double #554370;
       border-right-style: hidden;
       border-left-style: hidden;
@@ -105,16 +103,16 @@
   }
   
   .navbar-nav > li > a {
-      line-height: 56px;
+      line-height: 50px;
   }
   
   .navbar-brand > li > a {
-    line-height: 56px;
+    line-height: 50px;
   }
 
   #mobile-nav {
       display: none;
-      font-size: 95%;
+      font-size: 99%;
       background-color: #1a1a1a;
       opacity: .93;
       padding: 0;
@@ -127,14 +125,14 @@
 
   .navbar-brand {
     font-family: 'Amatic SC', cursive;
-    font-size: 2.5em;
+    font-size: 2.1em;
     list-style-type: none;
     color: #00ff99;
   }
 
-  h1 {
+  .greet {
     font-family: 'Amatic SC', cursive;
-    font-size: 2.3em
+    font-size: 3.4em;
     color: white;
   }  
 
@@ -145,25 +143,30 @@
     color: white;
   }
 
-  h3 {
+  .sech3 {
     font-family: 'Ropa Sans', sans-serif;
-    font-size: 2.4em;
+    font-size: 2.7em;
     color: #00ff99;
+    text-align: center;
+  }
+  
+  .descripthead {
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 2.7em;
+    color: #00ff99;
+    text-align: center;
   }
 
   p {
     font-family: 'Ropa Sans', sans-serif;
     color: #00ff99;
-    font-size: 1.8em;
-  }
-
-  .separator {
-  max-width: 140px;
+    font-size: 1.9em;
   }
 
   .separator-light {
     border-top: double 2px #00ff99;
     color: #00ff99;
+    max-width: 140px;
   }
 
 
@@ -286,11 +289,9 @@ figure.effect-portfolio:hover p {
   height: 200px;
   width: 200px;
   border: 2px solid #ff6666;
-  border-radius: 25px;
-  padding: 2px;
+  border-radius: 50px;
+  margin: 3px;
 }
-
-
 
 .social {
   list-style: none;
@@ -305,15 +306,15 @@ figure.effect-portfolio:hover p {
 .social li a {
   display: inline-block;
   color: #fc6e51;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 }
 
 #free-code-camp, #github, #linked-in, #twitter {
   border-radius: 50%;
   border: solid 2px #40CED7;
-  font-size: 2.2em;
-  padding: 10px;
+  font-size: 2.7em;
+  padding: 7px;
 }
 
 /****** Media Queries *****/
@@ -347,10 +348,6 @@ figure.effect-portfolio:hover p {
     display: inline-block;
     padding: 0;
   }
-
-  body {
-    font-size: 90%;
-  }
   
 }
 
@@ -372,7 +369,9 @@ figure.effect-portfolio:hover p {
   #mobile-nav ul li {
     display: inline-block;
     padding: 0;
-    font-size: 80%;
+  }
+  .navbar-brand {
+    font-size: 2.7em;
   }
   body {
     font-size: 90%;
@@ -382,7 +381,6 @@ figure.effect-portfolio:hover p {
 @media only screen and (min-width: 768px) and (max-width: 950px) {
   .intro-text {
     color: #fff;
-    padding: 200px 0;
   }
   #mobile-nav ul li {
     display: inline-block;
@@ -394,15 +392,6 @@ figure.effect-portfolio:hover p {
 @media only screen and (min-width: 950px) {
   .intro-text {
     color: #fff;
-    padding: 300px 0;
-  }
-  body {
-    font-size: 90%;
-  }
-  #mobile-nav ul li {
-    display: inline-block;
-    padding: 0;
-    font-size: 85%;
   }
 }
 
@@ -455,8 +444,8 @@ figure.effect-portfolio:hover p {
 <header>
   <div class="jumbotron text-center" id="heading">
     <div class="container intro-text">
-      <img src="https://dl.dropboxusercontent.com/s/eyfqgvz5d1z0jo2/1dfsdfsdf.jpg?dl=0" class="img-circle" alt="Cinque Terre" height="150px" width="150px">
-      <h1>High hai! Hi.</h1>
+      <img src="https://dl.dropboxusercontent.com/s/eyfqgvz5d1z0jo2/1dfsdfsdf.jpg?dl=0" class="img-circle" alt="Cinque Terre" height="170px" width="154px">
+      <h1 class="greet">High hai! Hi.</h1>
       <h2>
           This is about me and what I do.
       </h2> 
@@ -471,8 +460,8 @@ figure.effect-portfolio:hover p {
 <section id="portfolio" name="portfolio">
 <div class="container">
   <div class="row text-center">
-      <h3>Portfolio</h3>
-      <hr class="separator separator-light">
+      <h3 class="sech3">Portfolio</h3>
+      <hr class="separator-light">
       <p>Hover for info'.</p><br><br>
     </div>
     
@@ -573,8 +562,8 @@ figure.effect-portfolio:hover p {
 <section id="about" name="about">
 <div class="container text-center">
     <div class="row text-center">
-      <h3>"Description of Self"</h3>
-      <hr class="separator separator-light">
+      <h3 class="descripthead">"Description of Self"</h3>
+      <hr class="separator-light">
     </div>
     <div class="row">
       <div class="col-md-6">
@@ -595,8 +584,8 @@ figure.effect-portfolio:hover p {
 
 <section id="contact" name="contact">
 <div class="container">
-    <h3 class='text-center'>Get In Touch</h3>
-    <hr class="separator separator-light">
+    <h3 class="sech3">Get In Touch</h3>
+    <hr class="separator-light">
     <ul class="social text-center">
       <li>
         <a id="linked-in" href='https://www.linkedin.com/in/t-lauren-cremeans-40b48b21' target="_blank"><i class="fa fa-linkedin"></i></a>
